@@ -44,8 +44,8 @@ loginForm.addEventListener('submit', function (event) {
     localStorage.setItem('disableElement', 'true');
     if (!submitBtn.disabled) {
         
-      setTimeout(() => {
-        window.location.href = '../pages/main.html';
-      }, 1000);
+     
+    window.location.href = '../pages/main.html';
+   
     }
 });
