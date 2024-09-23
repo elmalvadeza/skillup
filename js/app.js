@@ -18,7 +18,7 @@
 
 const cursosButton = document.querySelector('.nav-list-item');
 const element = document.querySelector('.entrar');
-localStorage.removeItem('disableElement');
+
 
 document.addEventListener('DOMContentLoaded', function() {
 
