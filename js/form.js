@@ -63,7 +63,7 @@ registerForm.addEventListener('submit', function (event) {
       console.log('disableElement set to true'); // Verifique aqui
 
       setTimeout(() => {
-          window.location.href = '../index.html';
+          window.location.href = '../pages/main.html';
       }, 1000);
   }
 });
