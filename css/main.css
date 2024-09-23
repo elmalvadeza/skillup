@@ -1,0 +1,261 @@
+body {
+    background-color: black;
+}
+
+
+.home {
+    min-height: 100vh;
+
+    background-image: url('../img/Captura\ de\ tela\ 2024-09-22\ 105821.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cursos-section {
+    
+    min-height: 100vh;
+    background-color: #191919;
+}
+
+.about-main-course {
+    min-height: 84vh;
+    display: flex;
+    align-items: center;
+
+    background: rgb(25,25,25);
+    background: linear-gradient(90deg, rgba(25,25,25,1) 25%, rgba(25,25,25,0.9697128851540616) 32%, rgba(25,25,25,0.8856792717086834) 42%, rgba(28,28,28,0.7232142857142857) 53%, rgba(31,31,31,0.44870448179271705) 66%, rgba(31,31,31,0) 80%);
+}
+
+.main-course {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+
+    color: white;
+}
+
+.adquirir {
+    background-color: #1a1a53;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 18px 10px 18px;
+
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'outfit', sans-serif;
+    color: white;
+    text-decoration: none;
+    border: 0;
+    max-width: 100px;
+    
+
+    transition: 0.3s;
+}
+
+.adquirir:hover {
+    background-color: #1a1a53b3;
+}
+
+
+.checked {
+    color: lightblue;
+}
+
+.information {
+    display: flex;
+    gap: 50px;
+}
+
+.main-course p {
+    max-width: 600px;
+}
+
+
+
+nav {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+
+
+.brand {
+    cursor: pointer;
+    font-family: 'bebas neue', sans-serif;
+    font-size: 60px;
+
+    color: white;
+
+    --bs-navbar-brand-color: rgb(233, 233, 233);
+    --bs-navbar-brand-hover-color: white;
+}
+
+.navbar-nav {
+    --bs-navbar-color: white;
+    --bs-navbar-hover-color: white;
+    --bs-navbar-disabled-color: rgba(var(--bs-emphasis-color-rgb), 0.3);
+    --bs-navbar-active-color: white;
+    font-family: 'outfit', sans-serif;
+    font-size: 18px;
+
+    gap: 20px;
+}
+
+
+
+.nav-link {
+    position: relative;
+}
+
+
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    top: 90%;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: #ffffff;
+    transition: .4s;
+}
+
+.nav-link:hover::before {
+    width: 100%;
+}
+
+.active::before {
+    content: '';
+    position: absolute;
+    top: 90%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #ffffff;
+    transition: .4s;
+}
+
+.cards-container {
+    width: 100%;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.cards-container h1 {
+    font-family: 'outfit', sans-serif;
+    color: white;
+}
+
+.cards-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    padding-bottom: 20px;
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: #444 #222; /* For Firefox */
+}
+
+/* Custom scrollbar for Webkit browsers (Chrome, Safari) */
+.cards-wrapper::-webkit-scrollbar {
+    height: 10px; /* Height of the horizontal scrollbar */
+}
+
+.cards-wrapper::-webkit-scrollbar-thumb {
+    background-color: #444; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded edges */
+}
+
+.cards-wrapper::-webkit-scrollbar-track {
+    background: #222; /* Background for the scrollbar track */
+}
+
+.modern-card {
+    border: none;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease;
+    background: rgba(255, 255, 255, 0.196);
+    backdrop-filter: blur(5px);
+    min-height: 250px;
+    width: 300px;
+    margin-right: 20px; /* Add spacing between cards */
+    flex: 0 0 auto; /* Prevent cards from shrinking or wrapping */
+}
+
+.modern-card:hover {
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px);
+}
+
+.card-body {
+    padding: 0; /* Remove padding for full image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px; /* Set a height for the image area */
+    font-family: 'outfit', sans-serif;
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%; /* Ensure the image takes up the full height of the card */
+    object-fit: cover; /* This will cover the entire card without stretching */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card-footer {
+    padding: 15px;
+    text-align: center;
+    color: #fff;
+}
+
+.card-footer h1 {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.card-footer h3 {
+    font-size: 16px;
+}
+
+/* Responsive styles */
+@media (max-width: 991px) {
+    .modern-card {
+        width: 250px;
+    }
+}
+
+@media (max-width: 767px) {
+    .modern-card {
+        width: 200px;
+    }
+}
+
+@media (max-width: 992px) {
+
+
+
+    .navbar-collapse {
+        text-align: center;
+        /* Ensure text is centered in smaller screens */
+    }
+
+
+
+    .nav-link:hover::before,
+    .nav-list-item:hover::before {
+        width: 0;
+    }
+
+    .active::before {
+        width: 0;
+    }
+
+    .right-content {
+        display: none;
+    }
+}
+
+
+
+

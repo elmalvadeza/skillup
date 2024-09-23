@@ -1,0 +1,229 @@
+*{
+    color: white;
+}
+
+body {
+    background-color: black;
+}
+
+main {
+    background-image: url('../img/pexels-vyacheslav-bobin-105199946-9751579.jpg');
+    background-size: cover;
+    background-position: bottom;
+}
+
+.home {
+    min-height: 90vh;
+    
+
+    position: relative;
+}
+
+
+
+
+
+.main {
+    margin: 0 auto;
+    padding-top: 40px;
+    max-width: 650px;
+    min-height: 400px;
+    background: rgba(255, 255, 255, 0.037);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    text-align: center;
+    border-radius: 10px;
+}
+
+.main h1 {
+    font-family: 'inter', sans-serif;
+    font-weight: bolder;
+    margin-bottom: 0px;
+}
+
+.main h3 {
+    margin-top: 0px;
+    padding-left: 10%; padding-right: 10%; padding-top: 3%;
+    font-size: 22px;
+    font-family: 'outfit', sans-serif;
+}
+
+.main h6 {
+    padding-top: 2%;
+    padding-bottom: 4%;
+    font-weight: lighter;
+}
+
+.button {
+    width: 70%;
+    cursor: pointer;
+    margin: 0 auto;
+
+    padding: 7px;
+    border: 2px solid white;
+    background-color: transparent;
+    letter-spacing: 0px;
+
+    border-radius: 8px;
+
+    transition: .3s;
+}
+
+.button .text {
+    text-decoration: none;
+    
+    font-size: 25px;
+    letter-spacing: 0px;
+}
+
+.button:hover {
+    background-color: white;
+}
+
+.button:hover .text {
+    color: #1a1a53;
+    
+}
+
+.learn-more {
+    position: absolute;
+
+
+    height: 50px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border: none;
+    background-color: transparent;
+    transition: 0.3s;
+}
+
+.button-text {
+    color: #ffffff;
+    font-family: 'outfit', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.learn-more:hover {
+    text-decoration: underline;
+}
+
+.learn-more:active {
+    letter-spacing: 1px;
+}
+
+.destaques {
+    min-height: 100vh;
+    position: relative;
+}
+
+.modern-card {
+    border: none;
+    --bs-card-border-radius: none;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease;
+    background: rgba(255, 255, 255, 0.196);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    min-height: 350px;
+    width: 250px;
+    cursor: pointer;
+    position: relative; 
+    overflow: visible;
+}
+
+.modern-card span {
+    position: absolute;
+    left: -10%;
+    bottom: 5%;
+    font-size: 90px;
+    font-weight: bolder;
+    font-family: 'inter', sans-serif;
+    
+}
+
+.modern-card:hover {
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px);
+}
+
+.modern-card img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.card-body {
+    padding: 20px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    font-family: 'outfit', sans-serif;
+}
+
+.profile-img {
+
+    width: 100%;
+    
+}
+
+
+.card-footer {
+    border-top: 1px solid transparent;
+    padding: 15px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.card-footer h1 {
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.card-footer h3 {
+    font-size: 18px;
+}
+
+.cards {
+    padding-top: 200px;
+}
+
+.logged-main {
+    display: none;
+}
+
+.main-unlogged {
+    display: block;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .col-md-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 767px) {
+    .col-md-6 {
+        flex: 0 0 100%;
+        min-width: 510px;
+    }
+
+    .modern-card {
+        min-width: 510px;
+    }
+
+    .cards {
+        position: unset;
+    }
+
+    .main {
+        backdrop-filter: none;
+        background: none;
+    }
+
+}
